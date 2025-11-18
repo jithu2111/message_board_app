@@ -34,8 +34,17 @@ class MyApp extends StatelessWidget {
         title: 'Message Board App',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color(0xFF6A89A7),
+            primary: const Color(0xFF6A89A7),
+            secondary: const Color(0xFF88BDF2),
+          ),
           useMaterial3: true,
+          primaryColor: const Color(0xFF6A89A7),
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Color(0xFF6A89A7),
+            foregroundColor: Colors.white,
+          ),
         ),
         initialRoute: '/',
         routes: {

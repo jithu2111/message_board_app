@@ -31,13 +31,13 @@ class BoardsScreen extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Colors.deepPurple.shade400,
-                    Colors.deepPurple.shade700,
+                    Color(0xFF88BDF2),
+                    Color(0xFF6A89A7),
                   ],
                 ),
               ),

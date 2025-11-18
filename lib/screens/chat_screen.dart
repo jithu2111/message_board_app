@@ -214,7 +214,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   const SizedBox(width: 8),
                   CircleAvatar(
-                    backgroundColor: Colors.deepPurple,
+                    backgroundColor: const Color(0xFF6A89A7),
                     child: IconButton(
                       icon: const Icon(Icons.send, color: Colors.white),
                       onPressed: _sendMessage,
@@ -241,7 +241,7 @@ class _ChatScreenState extends State<ChatScreen> {
         children: [
           if (!isCurrentUser) ...[
             CircleAvatar(
-              backgroundColor: Colors.deepPurple.shade200,
+              backgroundColor: const Color(0xFF88BDF2),
               child: Text(
                 message.userName.isNotEmpty
                     ? message.userName[0].toUpperCase()
@@ -276,7 +276,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                   decoration: BoxDecoration(
                     color: isCurrentUser
-                        ? Colors.deepPurple
+                        ? const Color(0xFF6A89A7)
                         : Colors.grey.shade200,
                     borderRadius: BorderRadius.only(
                       topLeft: const Radius.circular(16),
@@ -316,7 +316,7 @@ class _ChatScreenState extends State<ChatScreen> {
           if (isCurrentUser) ...[
             const SizedBox(width: 8),
             CircleAvatar(
-              backgroundColor: Colors.deepPurple.shade200,
+              backgroundColor: const Color(0xFF88BDF2),
               child: Text(
                 message.userName.isNotEmpty
                     ? message.userName[0].toUpperCase()

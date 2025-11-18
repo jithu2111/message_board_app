@@ -157,7 +157,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     // Profile Avatar
                     CircleAvatar(
                       radius: 60,
-                      backgroundColor: Colors.deepPurple.shade200,
+                      backgroundColor: const Color(0xFF88BDF2),
                       child: Text(
                         _userData!.firstName[0].toUpperCase() +
                         _userData!.lastName[0].toUpperCase(),
@@ -296,7 +296,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             child: ElevatedButton(
                               onPressed: _isLoading ? null : _handleSave,
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.deepPurple,
+                                backgroundColor: const Color(0xFF6A89A7),
                                 foregroundColor: Colors.white,
                               ),
                               child: _isLoading
